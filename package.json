@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch data/ContactDatabase.json --port 8000\"",
     "data": "npx json-server --watch data/ContactDatabase.json --port 8000",
     "build": "react-scripts build",
     "test": "react-scripts test",
